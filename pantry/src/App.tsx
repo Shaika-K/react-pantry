@@ -1,14 +1,29 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
-import CountingButton from './CountingButton'
+import './App.scss'
+import CountingButton from './components/CountingButton'
 
 function App() {
 
-
-
   return (
     <>
+      <div className="d-flex flex-column gap-5">
+        <div>
+          Pantry notifications
+        </div>
+        <button>
+          Manage Pantry
+          this button goes a page that looks like online shopping website where you can update your pantry/fridge stock
+        </button>
+        <div>
+          Search for Recipies
+          <label htmlFor="recipeSearch"></label>
+          <input id="recipeSearch"></input>
+          <button></button>
+          <div>fitlers</div>
+        </div>
+
+      </div>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
