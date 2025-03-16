@@ -5,8 +5,6 @@ interface Props {
     onClick?: MouseEventHandler;
 }
 
-export const TestA = 'test';
-
 const CountingButton: FC<Props> = ({ change = 2, onClick }) => {
     const [count, setCount] = useState(0);
     const incrementCount = () => setCount((count) => count + 1)
